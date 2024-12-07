@@ -23,3 +23,7 @@ endif
 ifeq ($(PLATFORM_VERSION), $(filter $(PLATFORM_VERSION),U 14))
   $(call soong_config_set, vibrator, vibratortargets, vibratoraidlV2target)
 endif
+
+ifeq ($(PLATFORM_VERSION), $(filter $(PLATFORM_VERSION),V 15))
+  $(call soong_config_set, vibrator, vibratortargets, vibratoraidlV2target)
+endif
